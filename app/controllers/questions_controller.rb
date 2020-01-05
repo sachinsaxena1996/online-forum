@@ -7,7 +7,6 @@ class QuestionsController < ApplicationController
 	end
 
 	def show
-		@comments = @question.comments.to_a
 	end
 
 	def new

@@ -6,10 +6,11 @@
 		%h2
 			= @question.comments.count
 			Comments 
-		= render @comments
+		= render @question.comments
 
-		%h3 Reply to thread		
-		= render partial: "comments/comment" , collection: @comments
+		- if user_signed_in? && current_user.id != @question.user_id
+			%h3 Reply to thread
+			= render "comments/form"
 
 	%br/
 	%hr/
