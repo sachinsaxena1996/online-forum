@@ -1,0 +1,8 @@
+#questions
+	- @questions.each do |question|
+		.question
+			%h2.title= link_to question.title, question
+			%p.date
+				Published at
+				= time_ago_in_words(question.created_at)
+				= question.user.email

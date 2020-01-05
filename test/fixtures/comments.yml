@@ -2,10 +2,10 @@
 
 one:
   comment: MyText
-  post: one
+  question: one
   user: one
 
 two:
   comment: MyText
-  post: two
+  question: two
   user: two
