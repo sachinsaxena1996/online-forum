@@ -5,17 +5,17 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version ruby-2.3.1
 
-* System dependencies
+* System dependencies : Install system dependencies by running bundle in the project root directory
 
 * Configuration
 
-* Database creation
+* Database creation rails db:create
 
-* Database initialization
+* Database initialization rake db:migrate
 
-* How to run the test suite
+* How to run the test suite: rspec spec/
 
 * Services (job queues, cache servers, search engines, etc.)
 
